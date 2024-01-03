@@ -1,13 +1,18 @@
+import Link from "next/link";
+
 export default function NavigationMenu() {
+  const homePage = "/";
+
   return (
-    <div>
-      Navigation Menu
+    <nav>
       <ul>
-        <li>Home button</li>
+        <li>
+          <Link href={homePage}>Home</Link>
+        </li>
         <li>Projects button</li>
         <li>About button</li>
         <li>Contact button</li>
       </ul>
-    </div>
+    </nav>
   );
 }
