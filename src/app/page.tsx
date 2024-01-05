@@ -3,13 +3,15 @@
 import React, { useState } from "react";
 import { About, Contact, Overview, Projects } from "./ui/sections";
 import NavigationMenu from "./ui/navigation-menu";
-import NavigationBtn from "./ui/navigation-btn";
 
 export default function Home() {
-  const [navToggle, setNavToggle] = useState(false);
+  const [navToggle, setNavToggle] = useState<boolean>(false);
 
-  const onToggle = function (state: boolean, set: any) {
-    state == false ? set(true) : set(false);
+  const onToggle = function (
+    state: boolean,
+    set: React.Dispatch<React.SetStateAction<boolean>>
+  ) {
+    set(!state);
   };
 
   return (
@@ -18,8 +20,10 @@ export default function Home() {
         <div>
           <p>Brandon Woods</p>
         </div>
-        <NavigationBtn onClick={() => onToggle(navToggle, setNavToggle)} />
-        {navToggle && <NavigationMenu />}
+        <button onClick={() => onToggle(navToggle, setNavToggle)}>
+          NavigationBtn
+        </button>
+        <div>{navToggle && <NavigationMenu />}</div>
       </div>
       <div>
         Body
