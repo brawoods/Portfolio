@@ -5,13 +5,13 @@ export default function NavigationMenu() {
 
   return (
     <nav>
-      <ul>
+      <ul className="grid justify-items-end">
         <li>
           <Link href={homePage}>Home</Link>
         </li>
-        <li>Projects button</li>
-        <li>About button</li>
-        <li>Contact button</li>
+        <li>Projects</li>
+        <li>About</li>
+        <li>Contact</li>
       </ul>
     </nav>
   );

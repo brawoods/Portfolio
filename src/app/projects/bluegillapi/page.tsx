@@ -1,3 +1,10 @@
+import BlueGillApi from "@/app/ui/projects/bluegillapi";
+
 export default function Page() {
-  return <div>Project: BlueGillAPI</div>;
+  return (
+    <div>
+      <div>Project: BlueGillAPI</div>
+      <BlueGillApi />
+    </div>
+  );
 }

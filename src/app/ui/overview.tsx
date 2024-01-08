@@ -1,10 +1,9 @@
 export default function Overview() {
   return (
-    <div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec urna
-        ut odio interdum sollicitudin nec vitae mauris.
-      </p>
+    <div className="grid place-items-center">
+      <p>Software Engineer.</p>
+      <p>Full Stack.</p>
+      <p>Web and App.</p>
     </div>
   );
 }

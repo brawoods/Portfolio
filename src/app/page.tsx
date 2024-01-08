@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { About, Contact, Overview, Projects } from "./ui/sections";
+import { About, Contact, Overview, Projects } from "./ui/_sections";
 import NavigationMenu from "./ui/navigation-menu";
 import { onToggle } from "./lib/util";
 
@@ -12,15 +12,13 @@ export default function Home() {
     <main className="flex min-h-screen flex-col p-6">
       {/* header container */}
       <div id="header-container" className="grid grid-cols-3 ">
-        <div className="col-start-2 flex justify-center">
+        <div className="col-start-2 flex place-content-center">
           <p>//Brandon.Woods_</p>
         </div>
         <div className="col-start-3 flex justify-end">
           <button onClick={() => onToggle(navToggle, setNavToggle)}>Nav</button>
         </div>
-        <div className=" col-start-1 col-span-3  md:col-start-3 flex justify-end">
-          {navToggle && <NavigationMenu />}
-        </div>
+        <div className="col-start-3">{navToggle && <NavigationMenu />}</div>
       </div>
       {/* body */}
       <div>
