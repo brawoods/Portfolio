@@ -3,40 +3,37 @@
 import React, { useState } from "react";
 import { About, Contact, Overview, Projects } from "./ui/sections";
 import NavigationMenu from "./ui/navigation-menu";
+import { onToggle } from "./lib/util";
 
 export default function Home() {
   const [navToggle, setNavToggle] = useState<boolean>(false);
 
-  const onToggle = function (
-    state: boolean,
-    set: React.Dispatch<React.SetStateAction<boolean>>
-  ) {
-    set(!state);
-  };
-
   return (
-    <main>
-      <div>
-        <div>
-          <p>Brandon Woods</p>
+    <main className="flex min-h-screen flex-col p-6">
+      {/* header container */}
+      <div id="header-container" className="grid grid-cols-3 ">
+        <div className="col-start-2 flex justify-center">
+          <p>//Brandon.Woods_</p>
         </div>
-        <button onClick={() => onToggle(navToggle, setNavToggle)}>
-          NavigationBtn
-        </button>
-        <div>{navToggle && <NavigationMenu />}</div>
+        <div className="col-start-3 flex justify-end">
+          <button onClick={() => onToggle(navToggle, setNavToggle)}>Nav</button>
+        </div>
+        <div className=" col-start-1 col-span-3  md:col-start-3 flex justify-end">
+          {navToggle && <NavigationMenu />}
+        </div>
       </div>
+      {/* body */}
       <div>
-        Body
-        <div id="overview">
+        <div id="overview-container">
           <Overview />
         </div>
-        <div>
+        <div id="project-container">
           <Projects />
         </div>
-        <div>
+        <div id="about-container">
           <About />
         </div>
-        <div>
+        <div id="contact-container">
           <Contact />
         </div>
       </div>
