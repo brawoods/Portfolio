@@ -1,17 +1,22 @@
 import Link from "next/link";
+import Contact from "./contact";
 
 export default function NavigationMenu() {
-  const homePage = "/";
-
   return (
     <nav>
       <ul className="grid justify-items-end">
         <li>
-          <Link href={homePage}>Home</Link>
+          <Link href="#home">Home</Link>
         </li>
-        <li>Projects</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li>
+          <Link href="#projects">Projects</Link>
+        </li>
+        <li>
+          <Link href="#about">About</Link>
+        </li>
+        <li>
+          <Contact />
+        </li>
       </ul>
     </nav>
   );

@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col p-6">
       {/* header container */}
-      <div id="header-container" className="grid grid-cols-3 ">
+      <div id="home" className="grid grid-cols-3 mb-4">
         <div className="col-start-2 flex place-content-center">
           <p>//Brandon.Woods_</p>
         </div>
@@ -22,18 +22,26 @@ export default function Home() {
       </div>
       {/* body */}
       <div>
-        <div id="overview-container">
+        <div id="overview-container" className="my-16">
           <Overview />
         </div>
-        <div id="project-container">
-          <Projects />
+        <div id="projects">
+          <div>
+            <p>Projects</p>
+            <Projects />
+          </div>
         </div>
-        <div id="about-container">
+        <div id="about">
           <About />
         </div>
-        <div id="contact-container">
-          <Contact />
+        <div id="contact" className="flex justify-center">
+          <div>
+            <Contact />
+          </div>
         </div>
+      </div>
+      <div className="flex justify-center">
+        <div>Developed + Designed by Brandon Woods</div>
       </div>
     </main>
   );
