@@ -25,11 +25,11 @@ export default function Home() {
         <div id="overview" className="my-16">
           <Overview />
         </div>
-        <div id="projects" className="my-16">
-          <div>
+        <div id="projects" className="flex flex-col my-16">
+          <div className="flex justify-center">
             <p>Projects</p>
-            <Projects />
           </div>
+          <Projects />
         </div>
         <div id="about" className="flex flex-col my-16">
           <div className="flex justify-center">
