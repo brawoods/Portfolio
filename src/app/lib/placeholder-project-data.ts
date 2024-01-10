@@ -23,3 +23,5 @@ const placeholderProject = {
     "../../public/assets/black-clover/3reviewsFilterAndSort.gif",
   ],
 };
+
+export { placeholderProject };

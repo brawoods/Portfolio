@@ -31,9 +31,13 @@ export default function Home() {
             <Projects />
           </div>
         </div>
-        <div id="about" className="my-16">
+        <div id="about" className="flex flex-col my-16">
+          <div className="flex justify-center">
+            <p>About</p>
+          </div>
           <About />
         </div>
+
         <div id="contact" className="flex justify-center my-16">
           <div>
             <Contact />
