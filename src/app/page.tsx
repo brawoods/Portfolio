@@ -22,19 +22,19 @@ export default function Home() {
       </div>
       {/* body */}
       <div>
-        <div id="overview-container" className="my-16">
+        <div id="overview" className="my-16">
           <Overview />
         </div>
-        <div id="projects">
+        <div id="projects" className="my-16">
           <div>
             <p>Projects</p>
             <Projects />
           </div>
         </div>
-        <div id="about">
+        <div id="about" className="my-16">
           <About />
         </div>
-        <div id="contact" className="flex justify-center">
+        <div id="contact" className="flex justify-center my-16">
           <div>
             <Contact />
           </div>
