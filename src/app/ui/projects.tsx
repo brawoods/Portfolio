@@ -1,5 +1,4 @@
 import { projects } from "../lib/project-data";
-import productPage from "@/../public/assets/black-clover/black-clover-product-page.png";
 import Image from "next/image";
 
 interface Project {
@@ -22,7 +21,7 @@ export default function Projects() {
           <div className="text-center">{blackClover.descriptions}</div>
         </div>
         <div>
-          <Image src={productPage} alt="overview section" />
+          <Image src={blackClover.images[0]} priority alt="overview section" />
         </div>
       </div>
       <div className="grid gap-4 md:grid-cols-2 my-8">
@@ -31,7 +30,7 @@ export default function Projects() {
           <div className="text-center">{bluegillApi.descriptions}</div>
         </div>
         <div>
-          <Image src={productPage} alt="overview section" />
+          <Image src={blackClover.images[0]} alt="overview section" />
         </div>
       </div>
       <div className="grid gap-4 md:grid-cols-2 my-8">
@@ -40,7 +39,7 @@ export default function Projects() {
           <div className="text-center">{stackage.descriptions}</div>
         </div>
         <div>
-          <Image src={productPage} alt="overview section" />
+          <Image src={blackClover.images[0]} alt="overview section" />
         </div>
       </div>
     </>
