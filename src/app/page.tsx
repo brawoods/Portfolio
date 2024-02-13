@@ -1,11 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
-import { About, Contact, Overview, Projects } from "./ui/_sections";
+import { About, Contact, Overview, ProjectWrapper } from "./ui/_sections";
 import NavigationMenu from "./ui/navigation-menu";
 import { onToggle } from "./lib/util";
 
-export default function Home() {
+export default function Page() {
   const [navToggle, setNavToggle] = useState<boolean>(false);
   const title = "//Brandon.Woods_";
 
@@ -30,7 +30,7 @@ export default function Home() {
           <div className="flex justify-center">
             <p>Projects</p>
           </div>
-          <Projects />
+          <ProjectWrapper />
         </div>
         <div id="about" className="flex flex-col my-16">
           <div className="flex justify-center">

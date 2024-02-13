@@ -1,6 +1,34 @@
 import Image from "next/image";
+import { projects } from "../lib/project-data";
 
-export default function Project(project: Project) {
+interface Project {
+  name: string;
+  description: string;
+  gitHubUrl: string;
+  technologies: string[];
+  images: string[];
+  gifs: string[];
+}
+
+console.log("projects ", projects);
+
+export default function ProjectWrapper() {
+  return projects.map((project) => {
+    return (
+      <Project
+        name={project.name}
+        key={project.name}
+        description={project.description}
+        gitHubUrl={project.gitHubUrl}
+        technologies={project.technologies}
+        images={project.images}
+        gifs={project.gifs}
+      />
+    );
+  });
+}
+
+export function Project(project: Project) {
   return (
     <div className="grid gap-4 md:grid-cols-2 my-8">
       <div className="flex flex-col gap-4">
