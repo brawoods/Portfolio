@@ -20,6 +20,7 @@ const blackClover = {
     "./public/assets/black-clover/3reviewsAddVoteReport.gif",
     "./public/assets/black-clover/3reviewsFilterAndSort.gif",
   ],
+  videos: [],
 };
 
 const stackage = {
@@ -47,6 +48,7 @@ const stackage = {
     "compose-post.png",
   ],
   gifs: [],
+  videos: ["stackage-home-feed-demo.mp4"],
 };
 
 const bluegillApi = {
@@ -70,6 +72,7 @@ const bluegillApi = {
     "RDBMS-Schema.png",
   ],
   gifs: [],
+  videos: [],
 };
 
 const projects = [blackClover, stackage, bluegillApi];
