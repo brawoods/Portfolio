@@ -10,10 +10,8 @@ interface Project {
   gifs: string[];
 }
 
-console.log("projects ", projects);
-
 export default function ProjectWrapper() {
-  return projects.map((project) => {
+  return projects.map((project: Project) => {
     return (
       <Project
         name={project.name}
@@ -28,20 +26,15 @@ export default function ProjectWrapper() {
   });
 }
 
-export function Project(project: Project) {
+export function Project({ name, description, images, ...project }: Project) {
   return (
     <div className="grid gap-4 md:grid-cols-2 my-8">
       <div className="flex flex-col gap-4">
-        <div className="text-center">{project.name}</div>
-        <div className="text-center">{project.description}</div>
+        <div className="text-center">{name}</div>
+        <div className="text-center">{description}</div>
       </div>
       <div>
-        <Image
-          src={project.images[0]}
-          width="700"
-          height="500"
-          alt="overview section"
-        />
+        <Image src={images[0]} width="700" height="500" alt="thumbnail" />
       </div>
     </div>
   );
