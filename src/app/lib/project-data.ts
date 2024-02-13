@@ -12,7 +12,10 @@ const blackClover = {
     "HTML5",
     "CSS3",
   ],
-  images: ["/assets/black-clover/black-clover-product-page.png"],
+  images: [
+    "/assets/black-clover/black-clover-logo-3_2_ratio.png",
+    "/assets/black-clover/black-clover-product-page.png",
+  ],
   gifs: [
     "./public/assets/black-clover/0productIndex.gif",
     "./public/assets/black-clover/1productOverview.gif",
@@ -38,7 +41,7 @@ const stackage = {
     "FIREBASE",
   ],
   images: [
-    "/assets/stackage/stackage-logo.png",
+    "/assets/stackage/stackage-logo-3_2_ratio.png",
     "stackage-sign-up.png",
     "stackage-login.png",
     "post-comments.jpg",
@@ -65,7 +68,7 @@ const bluegillApi = {
     "UBUNTU",
   ],
   images: [
-    "/assets/bluegillapi/bluegill-api-logo.png",
+    "/assets/bluegillapi/bluegill-api-logo-3_2_ratio.png",
     "database-query-time-base.png",
     "k6-load-tests-10-vus.png",
     "loader.io-SDC-GET-qa_questions-baseline.png",
