@@ -36,7 +36,16 @@ const stackage = {
     "JEST",
     "FIREBASE",
   ],
-  images: ["/assets/black-clover/black-clover-product-page.png"],
+  images: [
+    "/assets/stackage/stackage-logo.png",
+    "stackage-sign-up.png",
+    "stackage-login.png",
+    "post-comments.jpg",
+    "homep-feed.jpg",
+    "home-feed-extended.jpg",
+    "filter-menu.jpg",
+    "compose-post.png",
+  ],
   gifs: [],
 };
 
@@ -53,7 +62,13 @@ const bluegillApi = {
     "NODE.JS",
     "UBUNTU",
   ],
-  images: ["/assets/black-clover/black-clover-product-page.png"],
+  images: [
+    "/assets/bluegillapi/bluegill-api-logo.png",
+    "database-query-time-base.png",
+    "k6-load-tests-10-vus.png",
+    "loader.io-SDC-GET-qa_questions-baseline.png",
+    "RDBMS-Schema.png",
+  ],
   gifs: [],
 };
 
