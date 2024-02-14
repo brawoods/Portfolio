@@ -1,25 +1,22 @@
-"use client";
-
-import React, { useState } from "react";
+import React from "react";
 import { About, Contact, Overview, ProjectWrapper } from "./ui/_sections";
-import NavigationMenu from "./ui/navigation-menu";
-import { onToggle } from "./lib/util";
+import NavigationWrapper from "./ui/navigation-menu";
 
 export default function Page() {
-  const [navToggle, setNavToggle] = useState<boolean>(false);
   const title = "//Brandon.Woods_";
 
   return (
-    <main className="flex min-h-screen flex-col p-6">
+    <main className="flex min-h-screen flex-col p-6 bg-gray-950">
       {/* header container */}
-      <div id="home" className="grid grid-cols-3 mb-4">
+      <div id="home" className="sticky top-6 grid grid-cols-3 mb-4 bg-gray-950">
         <div className="col-start-2 flex place-content-center">
           <p>{title}</p>
         </div>
-        <div className="col-start-3 flex justify-end">
-          <button onClick={() => onToggle(navToggle, setNavToggle)}>Nav</button>
+        {/* Navigation */}
+
+        <div className="flex justify-end">
+          <NavigationWrapper />
         </div>
-        <div className="col-start-3">{navToggle && <NavigationMenu />}</div>
       </div>
       {/* body */}
       <div>
